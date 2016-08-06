@@ -1,16 +1,16 @@
 {
-	"name": "oXygen License Server - beta",
-	"description": "This app runs the oXygen License Server.",
+	"name": "oXygen License Server - for trial licenses only",
+	"description": "This app runs the oXygen License Server. If you use it with licenses other than trials, the license acivated with this server will loose its activation once the server is restarted and will become unusable.",
 	"website": "https://oxygenxml.com/",
 	"logo": "https://www.oxygenxml.com/img/mb_xml_editor.png",
 	"success_url": "/oXygenLicenseServlet",
 	"env": {
 		"ADMIN_PASSWORD": {
-			"description": "The admin password - used to connect to the web administration interface along with username \"admin\".",
+			"description": "The password for the user \"admin\" - used to connect to the web administration interface.",
 			"required": true
 		},
 		"USER_PASSWORD": {
-			"description": "The user password - it should be configured in the oXygen application along with name \"user\".",
+			"description": "The password for the user \"user\" - it should be configured in the oXygen applications.",
 			"required": true
 		}
 	}
