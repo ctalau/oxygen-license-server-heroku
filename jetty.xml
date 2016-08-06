@@ -8,6 +8,32 @@
         <Set name="name">oXygen License Servlet</Set>
         <Set name="config"><SystemProperty name="jetty.home" default="."/>/passwords.properties</Set>
         <Set name="refreshInterval">0</Set>
+				<Call name="putUser">
+					<Arg>admin</Arg>
+					<Arg>
+						<New class="org.eclipse.jetty.util.security.Password">
+							<Arg><SystemProperty name="admin.password"/></Arg>
+						</New>
+					</Arg>
+					<Arg>
+						<Array type="java.lang.String">
+      				<Item>admin</Item>
+    				</Array>
+					</Arg>
+				</Call>
+				<Call name="putUser">
+					<Arg>user</Arg>
+					<Arg>
+						<New class="org.eclipse.jetty.util.security.Password">
+							<Arg><SystemProperty name="user.password"/></Arg>
+						</New>
+					</Arg>
+					<Arg>
+						<Array type="java.lang.String">
+      				<Item>user</Item>
+    				</Array>
+					</Arg>
+				</Call>
       </New>
     </Arg>
   </Call>

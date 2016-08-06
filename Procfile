@@ -1,1 +1,1 @@
-web: java $JAVA_OPTS -Dcatalina.base=/tmp/ -jar target/dependency/jetty-runner.jar --port $PORT --config jetty.xml --path oXygenLicenseServlet target/dependency/oXygenLicenseServlet.war
+web: java $JAVA_OPTS -Dadmin.password=$ADMIN_PASSWORD -Duser.password=$USER_PASSWORD -Dcatalina.base=/tmp/ -jar target/dependency/jetty-runner.jar --port $PORT --config jetty.xml --path oXygenLicenseServlet target/dependency/oXygenLicenseServlet.war
