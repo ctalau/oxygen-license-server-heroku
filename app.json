@@ -1,0 +1,19 @@
+{
+  "name": "oXygen License Server - beta",
+  "description": "This app runs the oXygen License Server.",
+  "website": "https://oxygenxml.com/",
+  "logo": "https://www.oxygenxml.com/img/mb_xml_editor.png",
+  "success_url": "/oXygenLicenseServlet",
+  "scripts": {
+    "postdeploy": "sh install.sh"
+  },
+  "env": {
+    "ADMIN_PASSWORD": {
+      "description": "The admin password - used to connect to the web administration interface along with username \"admin\".",
+			"required": true
+    },
+    "USER_PASSWORD": {
+      "description": "The user password - it should be configured in the oXygen application along with name \"user\".",
+			"required": true
+    }
+  },
