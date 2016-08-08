@@ -1,6 +1,6 @@
 {
-	"name": "oXygen License Server - for trial licenses only",
-	"description": "This app runs the oXygen License Server. If you use it with licenses other than trials, the license acivated with this server will loose its activation once the server is restarted and will become unusable.",
+	"name": "oXygen License Server - for trials only",
+	"description": "This app runs the oXygen License Server. Do not use it with licenses other than trials.",
 	"website": "https://oxygenxml.com/",
 	"logo": "https://www.oxygenxml.com/img/mb_xml_editor.png",
 	"success_url": "/oXygenLicenseServlet",
