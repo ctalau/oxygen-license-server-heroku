@@ -1,6 +1,6 @@
 {
-	"name": "oXygen License Server - for trials only",
-	"description": "This app runs the oXygen License Server. Do not use it with licenses other than trials.",
+	"name": "oXygen License Server",
+	"description": "This app runs the oXygen License Server- FOR TRIALS ONLY. Do not use it with licenses other than trials.",
 	"website": "https://oxygenxml.com/",
 	"logo": "https://www.oxygenxml.com/img/mb_xml_editor.png",
 	"success_url": "/oXygenLicenseServlet",
