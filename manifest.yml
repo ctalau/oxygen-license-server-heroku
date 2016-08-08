@@ -1,12 +1,8 @@
 applications:
-- services:
-  - oxygen-license-sever-trial
-  disk_quota: 512M
-  host: oxygen-license-sever-trial
-  name: oxygen-license-sever-trial
+- name: oxygen-license-sever-trial
+  memory: 256M
+  instances: 1
   description: This application run oXygen XML License Server - for trial licenses only.
   image: https://www.oxygenxml.com/img/mb_xml_editor.png
   path: target/dependency/oXygenLicenseServlet.war
-  domain: oxygenxml.com
-  instances: 1
-  memory: 512M
+  #command:  #The command to use to start the application
